@@ -44,13 +44,13 @@ export function Header() {
             ))}
 
             {session ? (
-                <Link 
-                href="/dashboard"
-                className="flex items-center justify-center gap-2"
+                <Link
+                    href="/dashboard"
+                    className="flex items-center justify-center gap-2"
                 >
-                Acessar clínica
+                    Acessar clínica
                 </Link>
-            ): (
+            ) : (
                 <Button>
                     <LogIn />
                     Portal da clínica
@@ -88,12 +88,13 @@ export function Header() {
                     </SheetTrigger>
 
                     <SheetContent side="right" className="w-60 sm:w-75 z-9999">
-                        <SheetTitle>Menu</SheetTitle>
-                        <SheetHeader></SheetHeader>
-                        <SheetDescription>
-                            Veja nossos links
-                        </SheetDescription>
-                        <nav className="flex flex-col space-y-4 mt-6">
+                        <SheetHeader>
+                            <SheetTitle>Menu</SheetTitle>
+                            <SheetDescription>
+                                Veja nossos links
+                            </SheetDescription>
+                        </SheetHeader>
+                        <nav className="flex flex-col space-y-4 mt-4">
                             <NavLinks />
                         </nav>
                     </SheetContent>
